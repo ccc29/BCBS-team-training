@@ -1,0 +1,28 @@
+body{
+    background-color: #9999;
+}
+container{
+    width: 1000px;
+    margin: 20px auto;
+}
+clr{
+    clear: both;
+}
+#box-1{
+    float: center;
+    width: 100%;
+}
+#box-3{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #7777;
+    border: 3px;
+    border-radius: 10px;
+    height: 400px;
+    width: 600px;
+    padding: 20px 15px;
+    margin: 10px;
+    float: right;
+    width: 30%;
+}
