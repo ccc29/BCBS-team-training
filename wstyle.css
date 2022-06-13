@@ -1,0 +1,47 @@
+.topnav {
+    background-color: rgb(59, 58, 58);
+    overflow: hidden;
+  }
+  .topnav p{
+      float:left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(154, 149, 149);
+    color: black;
+}
+
+.container {
+    position:fixed;
+    background-image: url('img src="https://github.com/ccc29/BCBS-team-training/blob/main/images/room.jpeg"');
+    background: no-repeat center cover;
+  }
+  .text p{
+      text-align: center;
+  }
+.text-block {
+    position: absolute;
+    text-align: center;
+    border: 3px;
+    padding : 5px 5px;
+    margin: 8px 8px;
+
+}
+.text-block h4{   
+    text-align: center;
+    background-color: black;
+    color: white;
+}
