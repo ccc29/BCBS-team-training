@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="f1" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="form1.css" rel="form1 stylesheet">
+    <title> Test form1 </title>
+</head>
+
+<body>
+    <form name="myForm" form id="myform" onclick="return validateForm()" method="pre">
+    <main>
+        <div class="topnav">
+            <a class="active" href="#signin">Sign In</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#search">Search</a>
+            <div class="search-icon" id="search1">
+                <label for="search1">
+                    <input type="text" id="search1" placeholder="Search..">
+                </label>
+            </div>
+            <div>
+                <img class="logo" src='https://raw.githubusercontent.com/ccc29/team-training/main/images/logo.png'>
+            </div>
+        </div>
+        <div class="name form-control" >
+            <label for="fist-name">Enter first name</label>
+            <input type="text" id="first-name" placeholder="Enter last name">
+        </div>
+        <div class="lname form-control" >
+            <label for="last-name">
+                Last name : <input type="text" id="Last-name" placeholder="Enter first name">  <br>
+            </label>
+        </div>
+        <div class="email form-control">
+            <label for="email">
+            Email : <input type="email" id="email" placeholder="xyz@gmail.com"> <br> 
+            </label>
+        </div>
+    
+        <div class="contact form-control">
+            <label for="number">
+            Contact number : <input type="tel" id="number" min="10" max="10" placeholder="Enter your number"> <br>
+            </label>
+        </div>
+        <div class="birthdate form-control">
+           <label for="bdate">
+                Birth date : <input type="date" id="bdate"> <br>
+           </label>
+        </div>
+        <div class="choice form-control">
+            <label for="domain">
+                Choice of domain : <input type="text" id="domain" placeholder="Full stack / AWS / cloud security"> <br>
+            </label>
+        </div>
+    <fieldset class="field form-control">
+        <legend> Choose your degree :</legend>
+        <div>
+            <input type="radio" name="format" id="ug" value="ug" checked>
+            <label for="ug"> Under Graduate ( UG )</label>
+        </div>
+        <div>
+            <input type="radio" name="format" id="pg" value="pg" >
+            <label for="ug"> Post Graduate ( PG )</label>
+        </div>
+    </fieldset>
+    <form action="">
+        <div class="question-wrapper">
+          <div class="question">Technologies you know :</div>
+          <div class="question-label">Mark the answers that apply:</div> <br>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="AWS cloud computing" id="question-1-option-1">
+            <label class="checkbox-label" for="question-1-option-1">AWS cloud computing</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="Full-stack development" id="question-1-option-2">
+            <label class="checkbox-label" for="question-1-option-2">Full-stack development</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="Python" id="question-1-option-3">
+            <label class="checkbox-label" for="question-1-option-3">Python</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="C / C++" id="question-1-option-4">
+            <label class="checkbox-label" for="question-1-option-4">C / C++</label>
+          </div>
+        </div>
+        </form>
+    <div class="buttons form-control">
+        <button class="button-1" type="button" id="signin" onclick="return validateForm()" method="pre">Click here to sign in</button>
+        <label for="signin"></label>
+        <button class="button-1" type="button" id="reset" onclick="return validateForm()" method="pre" >Reset the form</button>
+        <label for="reset"></label>
+    </div>
+</form>
+<script>
+    function fun(){
+    document.getElementById("myForm").reset();
+    }
+    function validateForm(){
+    var x = document.forms["myForm"]["First name"].value;
+    if(x==null || x== ""){
+    alert("Name must be filled out");
+    return false;
+    }
+    var y = document.forms["myForm"]["email"].value;
+    if(y== null){
+    alert("Email cannot be left empty.");
+    return false;
+    }
+    var z = document.forms["myForm"]["domain"].value;
+    if(z==null || z==""){
+    alert("please choose a domain name from below");
+    return false;
+    }
+    }
+</script>
+
+<div class="banner">
+	<div class="text-box left">
+		<h1>Lorem ipsum</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit nisi enim. Pellentesque tincidunt porta condimentum. Suspendisse finibus, magna ut aliquam mollis, libero velit auctor nunc, a suscipit est leo et dolor. Sed sit amet metus diam. Praesent et arcu elementum, vestibulum tortor luctus, suscipit diam. In hac habitasse platea dictumst.</p>
+	</div>
+	<img class="right" src='https://raw.githubusercontent.com/ccc29/team-training/main/images/logo.png'>
+</div>
+<table>
+	<thead>
+		<tr>
+			<th>Job Title</th>
+			<th>Location</th>
+			<th>Department</th>
+			<th>Posted</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td aria-label="Job Title">
+				<a href="#">Account Manager</a>
+			</td>
+			<td aria-label="Location">chennai</td>
+			<td aria-label="Department">Envision Corporate Development and Strategy</td>
+			<td aria-label="Posted">Dec 15, 2021</td>
+		</tr>
+		<tr>
+			<td aria-label="Job Title">
+				<a href="#">Application Developer</a>
+			</td>
+			<td aria-label="Location">chennai</td>
+			<td aria-label="Department">Envision, Inc.</td>
+			<td aria-label="Posted">Nov 03, 2021</td>
+		</tr>
+		<tr>
+			<td aria-label="Job Title">
+				<a href="#">Assistant Store Manager</a>
+			</td>
+			<td aria-label="Location">Bangalore</td>
+			<td aria-label="Department">Envision Xpress</td>
+			<td aria-label="Posted">Dec 10, 2021</td>
+		</tr>
+		<tr>
+			<td aria-label="Job Title">
+				<a href="#">Bag Folder/Picker</a>
+			</td>
+			<td aria-label="Location">Pune</td>
+			<td aria-label="Department">Envision Industries</td>
+			<td aria-label="Posted">Jun 13, 2022</td>
+		</tr>
+		<tr>
+			<td aria-label="Job Title">
+				<a href="#">Business Development Associate</a>
+			</td>
+			<td aria-label="Location">Mumbai</td>
+			<td aria-label="Department">Envision Industries</td>
+			<td aria-label="Posted">Nov 17, 2021</td>
+		</tr>
+	</tbody>
+</table>
+<table>
+    <tr>
+        <td>Services offered by our company :
+         <ul>
+          <li>System Integration</li>
+          <li>Managed Services</li>
+          <li>Total Outsourcing</li>
+          <li>Security Governance</li>
+          <li>Availability Services</li>
+        </ul>
+        <td> Some of our USP's :
+            <ol>
+                <li>Application Development and Portals</li>
+                <li>Business Transformation Services</li>
+                <li>Data Warehousing and Biz Intelligence</li>
+            </ol>
+        </td>
+        </td>
+    </tr>
+</table>
+<footer id="contact" role= "contentinfo">
+    <p>Copyright IMN 200</p>
+  </footer>
+</main>
+</body>
+
